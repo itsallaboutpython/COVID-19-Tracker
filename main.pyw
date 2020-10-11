@@ -1,7 +1,7 @@
 """
 Project Name: COVID-19 Tracker
 Project Developer:
-    - The Special Coder
+    - Vishesh Dvivedi (TheSpecialCoder)
 Project Description:
     This project uses tkinter and matplotlib library to create an application that can create graphs of 'confirmed cases', 'confirmed deaths' and
     'confirmed recoveries' of COVID-19 patients across the world or of one of the few countries mentioned in the code.
