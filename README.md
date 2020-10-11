@@ -1,23 +1,26 @@
 # COVID-19 Tracker
 
-Python GUI program to  
+Python GUI program to track COVID-19 cases on a daily basis using graphs
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+1- Open command prompt
+2- Go to 'COVID-19-Tracker' folder in command prompt using 
 
 ```bash
-pip install foobar
+cd path_to_COVID-19-Tracker_folder
+```
+
+3- Use the package manager [pip](https://pip.pypa.io/en/stable/) to install required packages.
+
+```bash
+pip install -r requirements.txt
 ```
 
 ## Usage
 
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+```bash
+python3 main.pyw
 ```
 
 ## Contributing
