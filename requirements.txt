@@ -1,0 +1,2 @@
+#### This project exlcusively requires only pandas library, rest all used libraries are builtin python libraries
+pandas
