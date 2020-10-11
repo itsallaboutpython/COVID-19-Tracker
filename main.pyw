@@ -36,6 +36,7 @@ plt.style.use('fivethirtyeight')
 root = tk.Tk()
 root.title("COVID-19 Graph Based Tracker")
 root.geometry("500x500")
+root.configure(bg='black')
 
 # Function to show popup in case if computer is not connected to the internet
 def popup_close():
@@ -422,27 +423,27 @@ def check_value():
 
 # Title of the GUI
 title_font = Font.Font(family = "Lucida Grande", size=20)
-title_label = tk.Label(root, text = "COVID-19 Graph Based Tracker", font = title_font)
+title_label = tk.Label(root, text = "COVID-19 Graph Based Tracker", font = title_font, foreground='yellow', background='black')
 title_label.place(relx=0.1, rely=0.1)
 
 # Area type label
 area_type_font = Font.Font(family="Lucida Grande", size = 15)
-area_type_label = tk.Label(root, text = "Enter area type: ", font = area_type_font)
+area_type_label = tk.Label(root, text = "Enter area type: ", font = area_type_font, foreground='yellow', background='black')
 area_type_label.place(relx = 0.08, rely = 0.3)
 
 # Graph type label
 graph_type_font = Font.Font(family="Lucida Grande", size = 15)
-graph_type_label = tk.Label(root, text = "Enter graph type: ", font = graph_type_font)
+graph_type_label = tk.Label(root, text = "Enter graph type: ", font = graph_type_font, foreground='yellow', background='black')
 graph_type_label.place(relx = 0.08, rely = 0.45)
 
 # Category type label
 category_type_font = Font.Font(family = "Lucida Grande", size = 15)
-category_type_label = tk.Label(root, text = "Enter category type", font = category_type_font)
+category_type_label = tk.Label(root, text = "Enter category type", font = category_type_font, foreground='yellow', background='black')
 category_type_label.place(relx = 0.08, rely = 0.6)
 
 # Data type dropdown
 var_data = tk.StringVar()
-data_type_dropdown = ttk.Combobox(root, width = 27, textvariable = var_data)
+data_type_dropdown = ttk.Combobox(root, width = 27, textvariable = var_data, foreground='black', background='yellow')
 data_type_dropdown['values'] = ('World', 'US', 'Russia', 'India', 'Brazil', 'South Africa', 'China', 'Italy',
              'Germany', 'Spain', 'France', 'United Kingdom', 'Peru', 'Mexico', 'Colombia', 'Saudi Arabia', 'Iran', 'Bangladesh',
             'Pakistan')
@@ -451,21 +452,27 @@ data_type_dropdown.current(0)
 
 # Graph type dropdown
 var_graph = tk.StringVar()
-graph_type_dropdown = ttk.Combobox(root, width = 27, textvariable = var_graph)
+graph_type_dropdown = ttk.Combobox(root, width = 27, textvariable = var_graph, foreground='black', background='yellow')
 graph_type_dropdown['values'] = ('Line', 'Bar')
 graph_type_dropdown.place(relx = 0.5, rely = 0.45)
 graph_type_dropdown.current(0)
 
 # Category type dropdown
 var_category = tk.StringVar()
-category_type_dropdown = ttk.Combobox(root, width = 27, textvariable = var_category)
+category_type_dropdown = ttk.Combobox(root, width = 27, textvariable = var_category, foreground='black', background='yellow')
 category_type_dropdown['values'] = ('Confirmed Cases', 'Confirmed Death', 'Confirmed Recoveries')
 category_type_dropdown.place(relx = 0.5, rely = 0.6)
 category_type_dropdown.current(0)
 
 # Show Graph
-show_graph_button = Button(root, text = "Show Graph", command = check_value)
+show_graph_button = Button(root, text = "Show Graph", command = check_value, foreground='black', background='yellow')
+show_graph_button.configure(width=10, activebackground="#33B5E3")
 show_graph_button.place(relx = 0.4, rely = 0.75)
+
+# Quit Button
+quit_button = Button(root, text = "Quit", command = quit, foreground='black', background='yellow')
+quit_button.configure(width=10, activebackground="#33B5E3")
+quit_button.place(relx = 0.4, rely = 0.85)
 
 # Main loop
 root.mainloop()
