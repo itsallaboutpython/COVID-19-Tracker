@@ -4,6 +4,12 @@ Python GUI program to track COVID-19 cases on a daily basis using graphs
 
 ## Installation
 
+### Prerequisites
+
+You should have python 3 of version above 3.6 to be installed in your local device
+
+### Additional steps
+
 1- Open command prompt
 
 2- Go to 'COVID-19-Tracker' folder in command prompt using 
@@ -19,6 +25,8 @@ pip install -r requirements.txt
 ```
 
 ## Usage
+
+1- Open command prompt (and make sure you have python 3 installed in your computer)
 
 ```bash
 python3 main.pyw
