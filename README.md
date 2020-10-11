@@ -5,6 +5,7 @@ Python GUI program to track COVID-19 cases on a daily basis using graphs
 ## Installation
 
 1- Open command prompt
+
 2- Go to 'COVID-19-Tracker' folder in command prompt using 
 
 ```bash
