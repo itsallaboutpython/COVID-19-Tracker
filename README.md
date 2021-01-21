@@ -43,6 +43,18 @@ cd path_to_COVID-19-Tracker_folder
 python3 main.pyw
 ```
 
+4- Following main screen appears
+
+![Main Screen](/pics/main_page.png?raw=true "Main Screen")
+
+5- Select country, bar type and data type of your choice, and then click on "Show Graph"
+
+![Select choice](/pics/choose_options.png?raw=true "Select choice")
+
+6- A beautiful graph will be displaying you the data you want
+
+![Graph](/pics/graph.png?raw=true "Graph")
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
